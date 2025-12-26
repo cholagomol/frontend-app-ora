@@ -4,6 +4,7 @@
 
 .criteria-label {
   width: 100%;
+
   .criteria-title {
     display: inline-block;
     max-width: calc(100% - 44px);
@@ -11,20 +12,25 @@
     font-weight: bold;
     vertical-align: top;
   }
+
   .esg-help-icon {
     margin-top: (map-get($spacers, 1\.5) * -1);
     margin-right: (map-get($spacers, 2\.5) * -1);
     vertical-align: top;
   }
 }
+
 .criteria-option {
   width: 100%;
-  > div {
+
+  >div {
     display: inline;
     width: 100%;
+
     .pgn__form-label {
       display: inline-flex;
     }
+
     .pgn__form-control-description {
       float: right;
     }
@@ -33,4 +39,11 @@
 
 .criterion-feedback {
   margin-top: 1rem;
+}
+
+.form-floating>.criterion-feedback~label {
+  background-color: $white;
+  width: auto;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
